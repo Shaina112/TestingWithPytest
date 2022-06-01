@@ -10,7 +10,7 @@ class TestDemoClass:
         self.val += 1
         assert self.val == 1
 
-    # this will fail since class variables are shared across functions
+    # this will not fail since each test has it;s own instance of the class
     def test_two(self):
         print(self.val)
         assert self.val == 0
