@@ -11,5 +11,6 @@ class TestDemoClass:
         assert self.val == 1
 
     # this will fail since class variables are shared across functions
-    def test_two_negative(self):
+    def test_two(self):
+        print(self.val)
         assert self.val == 0
